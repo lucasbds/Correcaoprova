@@ -1,61 +1,43 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author ifnmg
- */
 public class Imovel {
+    private Data DataCompra;
     private Proprietario proprietario;
-    private Data dataCompra;
     private String tipo;
     
-    
-    
-     
-    public void setProprietario (Proprietario proprietario){
-       this.proprietario = proprietario;    
-    }
-    
-    public void setDataCompra (Data dataCompra){
-       this.dataCompra = dataCompra;    
-    }
-     
-    public void setTipo(String tipo){
-       this.tipo = tipo;    
-   }
-       
-      
-      
-    
-    public String getProprietario (){
-            return this.proprietario;
-   }
-    
-    
-    public Data getDataCompra(){
-            return this.dataCompra;
-    }
-    
-    public Data getTipo(){
-            return this.tipo;
-    }
-    
-    
-   
-    public void mostrar(){
-      
-       System.out.println(this.getProprietario());
-       System.out.println(this.getDataCompra());
-       System.out.println(this.getTipo());
-    
-       
-    public boolean informarTipo(String t){
-        this.tipo =t
-                
-    }   
-    }/*
+public void getmostrar(){
+    System.out.println (DataCompra);
+    System.out.println (proprietario);
+    System.out.println (tipo);
 }
+public boolean getinformarTipo(String tipo){
+    if (tipo.equals ("casa")){
+        return true;
+    }
+    if (tipo.equals ("Apartamento")){
+        return true;
+    }
+    if (tipo.equals ("Sitio")){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+ public Data getDataCompra(){
+     return this.DataCompra;
+ }
+ public Proprietario getProprietario(){
+     return this.proprietario;
+ }
+ public String gettipo(){
+     return this.tipo;
+ }
+ public void setDatadaCompra(Data d){
+     this.DataCompra = d;
+ }
+ public void setProprietario(Proprietario p){
+     this.proprietario = p;
+ }
+ public void setTipo (String t){
+     this.tipo = t;
+ }}
+    

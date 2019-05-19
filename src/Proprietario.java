@@ -1,50 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author ifnmg
- */
 public class Proprietario {
+    
     private String nome;
-    private Data dataNascimento;
-    
-    
-    
-     
-    public void setNome (String nome ) {
-        this.nome = nome;    
-    }
-    
-     public void setDataNascimento (Data dataNascimento) {
-        this.dataNascimento = dataNascimento;    
-    }
-     
-     
-      
-      
-    
-    public String getNome (){
-            return this.nome;
-    }
-    
-    
-    public Data getDataNascimento(){
-            return this.dataNascimento;
-    }
-    
-    
-   
-    public void mostrar() {
-      
-       System.out.println(this.getNome());
-       System.out.println(this.getDataNascimento());
-    
-    }/*
-    */
+    private Data dataDeNascimento;
+
+public void getmostrar(){
+    System.out.println (nome);
+    System.out.println (dataDeNascimento);
 }
 
+public String getNome(){
+    return this.nome;
+}
 
+public Data getDatadeNascimento(){
+    return this.dataDeNascimento;
+}
+
+public void setNome(String n){
+    this.nome = n;
+}
+
+public void setDatadeNascimento(Data da){
+    this.dataDeNascimento = da;
+}
+
+}
